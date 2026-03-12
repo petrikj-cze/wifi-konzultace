@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sere vás WiFi? | Wifi servis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#f3f6fb;
+color:#1a1a1a;
+line-height:1.6;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#06b6d4);
+color:white;
+padding:120px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:56px;
+margin:0;
+letter-spacing:-1px;
+}
+
+.hero p{
+font-size:20px;
+margin-top:15px;
+opacity:.9;
+}
+
+.hero button{
+margin-top:35px;
+padding:16px 36px;
+font-size:18px;
+border:none;
+border-radius:12px;
+background:white;
+color:#2563eb;
+font-weight:600;
+cursor:pointer;
+transition:0.25s;
+}
+
+.hero button:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1150px;
+margin:auto;
+padding:30px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+font-weight:700;
+}
+
+/* SERVICES GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card h3{
+margin-top:0;
+font-size:20px;
+}
+
+/* BENEFITS */
+
+.benefits{
+background:white;
+border-radius:20px;
+padding:60px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.benefits ul{
+list-style:none;
+padding:0;
+font-size:18px;
+}
+
+.benefits li{
+margin:10px 0;
+}
+
+/* CONTACT */
+
+.contact{
+margin-top:0px;
+background:linear-gradient(135deg,#06b6d4,#2563eb);
+color:white;
+border-radius:20px;
+padding:70px 30px;
+text-align:center;
+}
+
+.contact h2{
+font-size:34px;
+margin-top:0;
+}
+
+.contact a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+font-size:14px;
+color:#777;
+}
+
+.card p i {
+	font-size: 14px;
+}
+
+
+.whatsapp-container{
+	margin-top:10px;
+}
+
+.whatsapp-box{
+background:white;
+padding:50px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+margin:60px 0;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:15px 28px;
+border-radius:10px;
+font-weight:600;
+text-decoration:none;
+}
+
+.whatsapp-btn:hover{
+background:#1ebe5d;
+</style>
+</head>
+
+
+<body>
+
+<section class="hero">
+
+<h1>Trápí vás domací wi-fi?</h1>
+
+<p>Zlepšíme signál a zrychlíme wifinu i u vás doma.</p>
+
+<button onclick="document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">
+Konzultace zdarma - napište nám
+</button>
+
+</section>
+
+
+<div class="container">
+
+<h2 class="section-title">Co pro vás uděláme?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📶 Wifi diagnostika</h3>
+<p>Zkontrolujeme signál u vás doma a zjistíme proč wifi nefunguje správně.</p>
+<p><i>Špatný signál může způsobit sekání videa při přehrávání na televizi, špatnou odezvu při hraní her nebo problémy při procházení internetu. Často přitom stačí jen o kousek posunout router na správné místo.</i></p>
+</div>
+
+<div class="card">
+<h3>⚙️ Optimalizace wifi</h3>
+<p>Nastavíme router, kanály a síť tak aby byla stabilní a běžela maximální možnou rychlostí.</p>
+<p><i>Rušení může často způsobovat například rozšiřovač signálu nebo špatně umístěný router. Kvůli špatně nastavené síti můžete mít problémy s tiskárnami nebo ovládáním televize pomocí telefonu.</i></p>
+</div>
+
+<div class="card">
+<h3>🏠 Wifi v celém domě</h3>
+<p>Navrhneme mesh wifi nebo access pointy pro pokrytí celého domu.</p>
+<p><i>Moderní mesh systém vytvoří z několika zařízení jednu velkou wifinu pro celý dům. Žádné přepojování ani odpojování. Jednoduše obrovská wifina všude v domě.</i></p>
+</div>
+
+<div class="card">
+<h3>🔌 Datové kabely</h3>
+<p>Natáhneme vám datové kabely dříve, než se o ně natáhne vy.</p>
+<p><i>Některá zařízení sice mají wifi, je ale daleko lepší je připojit kabelem. Ke všem takovým zařízením natáhneme elegantně kabely tak, aby nezavazely.</i></p>
+</div>
+
+<div class="card" style="background: #b3c3e6;">
+<h3>⚡ Poradíme při stavbě domu</h3>
+<p>Připravte si datové rozvody už při stavbě domu. Nebudete později muset vrtat a vymýšlet, kam kabely schovat.</p>
+<p><i>Při stavbě domů se často na kvalitní datové rozvody zapomíná, protože si lidé myslí, že vše dnes již běží po wifi. Smutní pak tahají kabely po chodbách a vrtají do nově vymalovaných zdí.</i></p>
+</div>
+
+<div class="card">
+<h3>📡 Instalace zařízení</h3>
+<p>Instalujeme routery, mesh systémy a access pointy.</p>
+<p><i>Jediný router jednoduše nemá šanci pokrýt velký dům a je potřeba více zařízení, abyste dosáhli kvalitního signálu v celém objektu.</i></p>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<div class="benefits">
+
+<h2>Proč si vybrat nás</h2>
+
+<ul>
+<li>✔️ Konzultace a průzkum zdarma</li>
+<li>✔️ Pracujeme v oboru internetu každý den</li>
+<li>✔️ Navrhneme řešení které opravdu funguje</li>
+<li>✔️ Žádná zbytečná zařízení a utracené peníze</li>
+
+</ul>
+
+</div>
+
+</div>
+<div class="container" id="whatsapp">
+<div class="whatsapp-box">
+
+<h2>📷 Pošlete nám fotku routeru</h2>
+
+<p>
+Pošlete nám fotku umístění routeru v místnosti.  
+Poradíme zdarma, zda je možné zlepšit signál.
+</p>
+
+<a class="whatsapp-btn"
+href="https://wa.me/420731749838?text=Dobrý den, posílám fotku routeru."
+target="_blank">
+
+Napište nám na WhatsAppu
+
+</a>
+
+</div>
+</div>
+
+<div class="container" id="kontakt">
+
+<div class="contact">
+
+<h2>Kontaktujte nás</h2>
+
+<p style="font-size:22px">
+
+📞 <b>+420 731 749 838</b>
+
+</p>
+
+<p style="font-size:20px">
+
+📧 <a href="mailto:serevas@gmail.com">
+serevas@gmail.com
+</a>
+
+</p>
+
+<p>Konzultace a průzkum zdarma. Napište nebo zavolejte. Rádi si s vámi domluvíme termín návštěvy.</p>
+
+</div>
+
+</div>
+
+
+
+
+<footer>
+
+© Wifi servis – zlepšujeme wifi v domech a bytech
+
+</footer>
+
+
+</body>
+</html>
